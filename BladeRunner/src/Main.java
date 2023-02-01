@@ -20,7 +20,7 @@ public class Main {
 
         }
 
-        System.out.println("NUMERO DE REPLICANTES VIVOS: " + Replicante.contadorReplicante() + "\n");f
+        System.out.println("NUMERO DE REPLICANTES VIVOS: " + Replicante.contadorReplicante() + "\n");ssd
 
         //SEGUNDO REPLICANTE DISPARA AL BLADERUNNER
 
