@@ -20,6 +20,9 @@ public class BladeRunner {
         }
 
         int numero = (int)(Math.random()*2+1);
+        if(blaster.disparos < 5){
+            blaster.disparos += 1;
+        }
 
         if(numero == 1){
             replicante.estado = Estado.HERIDO;
@@ -27,6 +30,7 @@ public class BladeRunner {
             replicante.estado = Estado.MUERTO;
             Replicante.numRepplicante -= 1;
         }
+
 
     }
     public void recargarBlaster(){

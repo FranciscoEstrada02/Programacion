@@ -11,15 +11,31 @@ public class Main {
 
         //BLADERUNNER DISPARA
 
-        blade.dispararAReplicante(replicante1);
-        System.out.println(blade.blaster.disparos);
-        System.out.println(replicante1.estado);
+        while((replicante1.estado == Estado.HERIDO || replicante1.estado == Estado.VIVO) && blade.blaster.disparos > 0){
+            System.out.println("Municion del blade Runnner: " + blade.blaster.disparos);
+            blade.dispararAReplicante(replicante1);
+            System.out.println("Municion del blade Runnner: " + blade.blaster.disparos);
+            System.out.println("Estado del replicante 1: " + replicante1.estado);
+        }
 
-        blade.dispararAReplicante(replicante1);
-        System.out.println(blade.blaster.disparos);
-        System.out.println(replicante1.estado);
+        System.out.println("NUMERO DE REPLICANTES VIVOS: " + Replicante.contadorReplicante() + "\n");
 
+        while((replicante2.estado == Estado.HERIDO || replicante2.estado == Estado.VIVO) && blade.blaster.disparos > 0){
+            System.out.println("Municion del blade Runnner: " + blade.blaster.disparos);
+            blade.dispararAReplicante(replicante2);
+            System.out.println("Municion del blade Runnner: " + blade.blaster.disparos);
+            System.out.println("Estado del replicante 1: " + replicante2.estado);
+        }
 
-        System.out.println(Replicante.contadorReplicante());
+        System.out.println("NUMERO DE REPLICANTES VIVOS: " + Replicante.contadorReplicante()+ "\n");
+
+        while((replicante3.estado == Estado.HERIDO || replicante3.estado == Estado.VIVO) && blade.blaster.disparos > 0){
+            System.out.println("Municion del blade Runnner: " + blade.blaster.disparos);
+            blade.dispararAReplicante(replicante3);
+            System.out.println("Municion del blade Runnner: " + blade.blaster.disparos);
+            System.out.println("Estado del replicante 1: " + replicante3.estado);
+        }
+
+        System.out.println("NUMERO DE REPLICANTES VIVOS: " + Replicante.contadorReplicante()+ "\n");
     }
 }
