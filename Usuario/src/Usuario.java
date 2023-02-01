@@ -43,21 +43,16 @@ public class Usuario {
     }
 
     public String login(String usuario1, String contraseña1, Usuario usuario) {
-        if (this.estadoUsuario) return "YA ESTA CONECTADO";
 
-        if ((usuario1.equals(usuario.getUser())) && (contraseña1.equals(usuario.getPassword()))) {
-            estadoUsuario = true;
-            return "CONEXION ESTABLECIDA";
-        }
-        return "NO SE PUDO CONECTAR";
-    }
-
-    public boolean conexion(boolean estadoUsuario) {
-
-        if (estadoUsuario) {
-            return false;
+        if ((usuario1.equals(usuario.getUser())) && (contraseña1.equals(usuario.getPassword())) && this.estadoUsuario == true) {
+            this.estadoUsuario = true;
+            return "CONECTADO";
         } else {
-            return true;
+            this.estadoUsuario = false;
+            return "NO SE PUDO CONECTAR";
         }
+
     }
+
+
 }

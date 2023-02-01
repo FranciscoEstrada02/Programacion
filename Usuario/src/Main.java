@@ -17,16 +17,21 @@ public class Main {
                 System.out.println("Ingrese su usuario");
                 String usuario1 = sc.nextLine();
                 System.out.println("Ingrese su contraseña");
+                usuario.setEstadoUsuario(true);
                 String contraseña1 = sc.nextLine();
                 System.out.println(usuario.covertirContraseña());
                 System.out.println(usuario.login(usuario1, contraseña1, usuario));
+
+
             } else if (login.equals("no")) {
                 if (usuario.isEstadoUsuario() == false) {
-                    System.out.println("Ya esta desconectado");
+                    System.out.println("YA ESTA DESCONECTADO");
                 } else {
                     System.out.println("DESCONECTADO");
+                    usuario.setEstadoUsuario(false);
                 }
             }
+
         }
     }
 }

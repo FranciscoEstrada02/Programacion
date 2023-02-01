@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/A6_EjerciciosBuclesI/Figuras_POO/Figuras_POO.iml" filepath="$PROJECT_DIR$/A6_EjerciciosBuclesI/Figuras_POO/Figuras_POO.iml" />
       <module fileurl="file://$PROJECT_DIR$/Operador/Operador.iml" filepath="$PROJECT_DIR$/Operador/Operador.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pelicula/Pelicula.iml" filepath="$PROJECT_DIR$/Pelicula/Pelicula.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Programacion.iml" filepath="$PROJECT_DIR$/.idea/Programacion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prueba Arrays/Prueba Arrays.iml" filepath="$PROJECT_DIR$/Prueba Arrays/Prueba Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/A6_EjerciciosBuclesI/TareaBucles/TareaBucles.iml" filepath="$PROJECT_DIR$/A6_EjerciciosBuclesI/TareaBucles/TareaBucles.iml" />
       <module fileurl="file://$PROJECT_DIR$/Texto/Texto.iml" filepath="$PROJECT_DIR$/Texto/Texto.iml" />
       <module fileurl="file://$PROJECT_DIR$/Usuario/Usuario.iml" filepath="$PROJECT_DIR$/Usuario/Usuario.iml" />
