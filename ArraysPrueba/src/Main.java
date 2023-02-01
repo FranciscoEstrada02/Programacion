@@ -2,21 +2,21 @@ import java.util.Arrays;
 import java.util.Random;
 public class Main {
     public static void main(String[] args) {
-        double[] notas = new double[10];
+        int[] notas = new int[29];
         Random numAleatorio = new Random();
 
         for(int i = 0; i < notas.length; i++){
-            notas[i] = i + 1 ;
+            notas[i] = numAleatorio.nextInt(10+1);
 
         }
+        int suspensos = 0;
         System.out.println(Arrays.toString(notas));
-        for(int i = 0;i <notas.length;i++){
-            notas[i] = notas[i] * 1.21;
+
+        for(int nota: notas){
+            if(nota < 5){
+                suspensos++;
+            }
         }
-
-        System.out.println(Arrays.toString(notas));
-
-
-
+        System.out.println("Hay "suspensos);
     }
 }

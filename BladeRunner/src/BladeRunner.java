@@ -2,9 +2,9 @@ import java.util.Random;
 
 public class BladeRunner {
     private String nombre;
-    private int escudo = 10;
-    Estado estado;
-    private String mascosta;
+    public int escudo = 10;
+    public Estado estado;
+    private String mascota;
 
     public Blaster blaster;
 
@@ -20,7 +20,7 @@ public class BladeRunner {
         }
 
         int numero = (int)(Math.random()*2+1);
-        if(blaster.disparos < 5){
+        if(blaster.disparos == 0 ){
             blaster.disparos += 1;
         }
 

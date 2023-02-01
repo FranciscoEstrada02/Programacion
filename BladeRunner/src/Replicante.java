@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Replicante {
     public static int numRepplicante;
     private String nombre;
@@ -5,6 +7,7 @@ public class Replicante {
     private int escudo;
     private int potencia;
     Estado estado;
+    public Blaster blaster;
 
     public Replicante(String nombre) {
         this.nombre = nombre;
@@ -13,6 +16,7 @@ public class Replicante {
         this.potencia = potencia;
         this.estado = Estado.VIVO;
         numRepplicante++;
+        this.blaster = new Blaster();
 
 
     }
@@ -66,6 +70,34 @@ public class Replicante {
     }
     public static int contadorReplicante(){
         return numRepplicante;
+    }
+    public void dispararABlade(BladeRunner blade){
+        blaster.disparos -= 1;
+        if(blaster.disparos < 0){
+            System.out.println("Recarga el blaster para seguir disparando");
+        }
+        if(blaster.disparos == 0 ){
+            blaster.disparos += 1;
+        }
+
+        Random numAleatorio = new Random();
+        int numero = numAleatorio.nextInt(3+1);
+
+        blade.escudo -= numero;
+
+
+        if(blade.escudo <= 0){
+            blade.estado = Estado.HERIDO;
+        }
+        if(blade.estado == Estado.HERIDO){
+            blade.estado = Estado.MUERTO;
+        }else {
+            blade.estado = Estado.VIVO;
+        }
+
+
+
+
     }
 
 }
