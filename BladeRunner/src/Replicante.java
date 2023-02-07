@@ -81,9 +81,9 @@ public class Replicante {
         }
 
         Random numAleatorio = new Random();
-        int numero = numAleatorio.nextInt(3+1);
+        int numero = numAleatorio.nextInt(3);
 
-        blade.escudo -= numero;
+        blade.escudo -= numero +1;
 
 
         if(blade.escudo <= 0){

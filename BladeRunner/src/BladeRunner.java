@@ -8,9 +8,10 @@ public class BladeRunner {
 
     public Blaster blaster;
 
-    public BladeRunner(String nombre) {
+    public BladeRunner(String nombre,String mascota) {
         this.nombre = nombre;
         this.blaster = new Blaster();
+        this.mascota = mascota;
     }
 
     public void dispararAReplicante(Replicante replicante){

@@ -2,7 +2,7 @@ import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
-        BladeRunner blade = new BladeRunner("Fran");
+        BladeRunner blade = new BladeRunner("Fran","pochita");
 
 
         Replicante replicante1 = new Replicante("replicante1");
@@ -20,7 +20,7 @@ public class Main {
 
         }
 
-        System.out.println("NUMERO DE REPLICANTES VIVOS: " + Replicante.contadorReplicante() + "\n");ssd
+        System.out.println("NUMERO DE REPLICANTES VIVOS: " + Replicante.contadorReplicante() + "\n");
 
         //SEGUNDO REPLICANTE DISPARA AL BLADERUNNER
 
@@ -44,6 +44,7 @@ public class Main {
         System.out.println("NUMERO DE REPLICANTES VIVOS: " + Replicante.contadorReplicante() + "\n");
 
         // EL TERCER REPLICANTE ME DISPARA HASTA QUE MUERO
+
         while ((blade.estado == Estado.HERIDO || blade.estado == Estado.VIVO) && replicante3.blaster.disparos > 0) {
             System.out.println("Municion del replicante3: " + replicante3.blaster.disparos);
             replicante3.dispararABlade(blade);

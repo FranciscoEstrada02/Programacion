@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../ArraysPrueba/ArraysPrueba.iml" filepath="$PROJECT_DIR$/../ArraysPrueba/ArraysPrueba.iml" />
       <module fileurl="file://$PROJECT_DIR$/../BladeRunner/BladeRunner.iml" filepath="$PROJECT_DIR$/../BladeRunner/BladeRunner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Cuenta/Cuenta.iml" filepath="$PROJECT_DIR$/../Cuenta/Cuenta.iml" />
       <module fileurl="file://$PROJECT_DIR$/Personaje.iml" filepath="$PROJECT_DIR$/Personaje.iml" />
     </modules>
   </component>
