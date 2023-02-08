@@ -11,4 +11,11 @@ public abstract class Empleado {
         this.salario = salario;
 
     }
+    @Override
+    public String toString() {
+        return "Nombre:" + nombre +
+                "\nEdad: " + edad +
+                "\nSalario: " + salario;
+    }
+
 }

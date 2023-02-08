@@ -29,9 +29,7 @@ public class Repartidor extends Empleado {
 
     @Override
     public String toString() {
-        return "Nombre:" + nombre +
-                "\nEdad: " + edad +
-                "\nSalario: " + salario +
+        return super.toString() +
                 "\nZona: " + zona +
                 "\nCobra plus: " + cobraPlus +
                 "\nSalario a percibir: " +  salarioFinal;

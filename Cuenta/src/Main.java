@@ -20,6 +20,7 @@ public class Main {
 
             sc.nextLine();
 
+
             if (opcion == 1) {
                 System.out.println("Ingrese su usuario");
                 String usuario = sc.nextLine();
@@ -29,16 +30,11 @@ public class Main {
                 int saldo = sc.nextInt();
                 cuenta1 = new Cuenta(usuario, numCuenta, 2, saldo);
 
-            } else if (opcion == 2) {
-                if (cuenta1 == null) {
-                    System.out.println("No hay ninguna cuenta creada");
-                } else {
+            }
+            if (cuenta1 != null) {
+                if (opcion == 2) {
                     System.out.println("El saldo de la cuenta es: " + cuenta1.getSaldo());
-                }
-            } else if (opcion == 3) {
-                if (cuenta1 == null) {
-                    System.out.println("No hay ninguna cuenta creada");
-                } else {
+                } else if (opcion == 3) {
                     System.out.println("Cuanto quiere ingresar");
                     double cantidadIngresar = sc.nextInt();
                     if (cuenta1.ingreso(cantidadIngresar)) {
@@ -46,12 +42,8 @@ public class Main {
                     } else {
                         System.out.println("La cantidad a ingresar no puede ser negativa");
                     }
-                }
-            } else if (opcion == 4) {
-                double cantidad = 0;
-                if (cuenta1 == null) {
-                    System.out.println("No hay ninguna cuenta creada");
-                } else {
+                } else if (opcion == 4) {
+                    double cantidad = 0;
                     System.out.print("Introduce la cuenta destino: ");
                     String cuentaDestino = sc.nextLine();
                     System.out.print("Introduce la cantidad a transferir: ");
@@ -61,16 +53,13 @@ public class Main {
                     } else {
                         System.out.println("No se puedo realizar la tranferecia");
                     }
+                } else if (opcion == 5) {
+                    System.out.println(cuenta1.toString());
+                } else if (opcion == 6) {
+                    opcion1 = false;
                 }
-
-            } else if (opcion == 5) {
-                if (cuenta1 == null) {
-                    System.out.println("No hay ninguna cuenta creada");
-                } else {
-                    cuenta1.toString();
-                }
-            } else if (opcion == 6) {
-                opcion1 = false;
+            }else{
+                System.out.println("No hay ninguna cuenta creada");
             }
         }
     }

@@ -30,9 +30,7 @@ public class Comercial extends Empleado{
 
     @Override
     public String toString() {
-        return "Nombre:" + nombre +
-                "\nEdad: " + edad +
-                "\nSalario: " + salario +
+        return super.toString() +
                 "\nComision: " + comision +
                 "\nCobra plus: " + cobraPlus +
                 "\nSalario a percibir: " + salarioFinal;

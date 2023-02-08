@@ -90,9 +90,9 @@ public class Cuenta {
 
     @Override
     public String toString() {
-        return "Titular: " + this.cliente +
-                "\nNumero de Cuenta: " + this.numCuenta +
-                "\nIntereses: " + this.interes +
-                "\nSaldo: " + this.saldo;
+        return "Titular: " + cliente +
+                "\nNumero de Cuenta: " + numCuenta +
+                "\nIntereses: " + interes +
+                "\nSaldo: " + saldo;
     }
 }
