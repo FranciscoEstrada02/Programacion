@@ -19,7 +19,7 @@ public class Comercial extends Empleado{
     }
 
     public void plus(){
-        if(edad > 30 && comision > 200){
+        if(this.edad > 30 && comision > 200){
             cobraPlus = true;
             salarioFinal = (salario + comision + super.plus);
         }else{

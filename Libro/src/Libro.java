@@ -1,21 +1,25 @@
 public class Libro {
     private String titulo;
     private String autor;
-    private int ejemplaresLibro;
+    private  int ejemplaresLibros = 0;
     private int ejemplaresPrestados;
+    private int totalEjemplares;
+
+
 
     public Libro() {
-        this.titulo = titulo;
-        this.autor = autor;
-        this.ejemplaresLibro = ejemplaresLibro;
-        this.ejemplaresPrestados = ejemplaresPrestados;
+        this.titulo = "";
+        this.autor = "";
+        this.ejemplaresPrestados = 0;
     }
 
-    public Libro(String titulo, String autor, int ejemplaresLibro, int ejemplaresPrestados) {
+    public Libro(String titulo, String autor, int libros) {
         this.titulo = titulo;
         this.autor = autor;
-        this.ejemplaresLibro = ejemplaresLibro;
-        this.ejemplaresPrestados = ejemplaresPrestados;
+        this.totalEjemplares = libros ;
+        this.ejemplaresPrestados = 0;
+        this.ejemplaresLibros = libros;
+
     }
 
     public String getTitulo() {
@@ -35,12 +39,9 @@ public class Libro {
     }
 
     public int getEjemplaresLibro() {
-        return ejemplaresLibro;
+        return ejemplaresLibros;
     }
 
-    public void setEjemplaresLibro(int ejemplaresLibro) {
-        this.ejemplaresLibro = ejemplaresLibro;
-    }
 
     public int getEjemplaresPrestados() {
         return ejemplaresPrestados;
@@ -50,9 +51,35 @@ public class Libro {
         this.ejemplaresPrestados = ejemplaresPrestados;
     }
 
-    public boolean prestamo(){
+    public String realizarPrestamo() {
+        if(totalEjemplares > 0){
 
-        if()
+            this.ejemplaresPrestados++;
+            this.totalEjemplares--;
 
+
+            return "Prestamo realizado con exito";
+        }else{
+            return "No se ah podido realizar el prestamo";
+        }
+    }
+    public String realizarDevolucion(){
+
+        if(this.ejemplaresPrestados != 0){
+            this.ejemplaresPrestados--;
+            totalEjemplares += 1;
+            return "Devolucion realizada con exito";
+        }else {
+            return "No se ah hecho la devolucion";
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Libro: " + titulo + "\n" +
+                "Autor: " + autor + "\n" +
+                "Numero de ejemplares: " + ejemplaresLibros + "\n" +
+                "Ejemplares prestados: " + ejemplaresPrestados + "\n" +
+                "Ejemplaares en stock: " + totalEjemplares;
     }
 }

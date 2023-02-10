@@ -17,7 +17,7 @@ public class Repartidor extends Empleado {
     }
 
     public void plus(){
-        if(edad > 30 && zona.equals("zona 3")){
+        if(this.getEdad() > 30 && zona.equals("zona 3")){
             cobraPlus = true;
             salarioFinal = (salario + super.plus);
         }else{

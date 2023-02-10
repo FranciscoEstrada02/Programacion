@@ -67,8 +67,7 @@ public class Cuenta {
         }
 
     }
-
-    public boolean reintegro(int cantidad){
+    public boolean reintegro(double cantidad){
         if((cantidad > saldo) && (cantidad <= 0 )){
             saldo = saldo;
             return false;
@@ -82,7 +81,8 @@ public class Cuenta {
         if(importe > saldo){
             return false;
         }else{
-            saldo -= importe;
+            interes /= 100;
+            saldo -= (importe + interes) ;
             cuenta.saldo += importe;
             return true;
         }

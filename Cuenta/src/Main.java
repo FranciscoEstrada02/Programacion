@@ -13,8 +13,9 @@ public class Main {
                     "\n2. Mostrar saldo cuenta" +
                     "\n3. Hacer ingreso cuenta" +
                     "\n4. Hacer transferencia" +
-                    "\n5. Mostrar datos de la cuenta" +
-                    "\n6. Salir");
+                    "\n5. Hacer un retiro" +
+                    "\n6. Mostrar datos de la cuenta" +
+                    "\n7. Salir");
 
             int opcion = sc.nextInt();
 
@@ -54,8 +55,17 @@ public class Main {
                         System.out.println("No se puedo realizar la tranferecia");
                     }
                 } else if (opcion == 5) {
-                    System.out.println(cuenta1.toString());
+                    System.out.println("Cuanto quiere retirar");
+                    double cantidadRetirar = sc.nextInt();
+
+                    if (cuenta1.reintegro(cantidadRetirar)) {
+                        System.out.println("Reintegro realizado con exito");
+                    } else {
+                        System.out.println("La cantidad a reintegrar no puede ser negativa");
+                    }
                 } else if (opcion == 6) {
+                    System.out.println(cuenta1.toString());
+                } else if (opcion == 7) {
                     opcion1 = false;
                 }
             }else{
