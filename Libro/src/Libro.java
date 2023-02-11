@@ -52,6 +52,8 @@ public class Libro {
     }
 
     public String realizarPrestamo() {
+
+
         if(totalEjemplares > 0){
 
             this.ejemplaresPrestados++;

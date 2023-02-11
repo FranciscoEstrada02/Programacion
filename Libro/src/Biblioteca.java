@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Biblioteca {
-    private List<Libro> Biblioteca = new ArrayList<>();
+    protected List<Libro> Biblioteca = new ArrayList<>();
 
     public Biblioteca() {
         Biblioteca = Biblioteca;
