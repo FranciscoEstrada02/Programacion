@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        Ejercicio3 ejercicio3 = new Ejercicio3();
+        ejercicio3.hacerCadena();
     }
 }
