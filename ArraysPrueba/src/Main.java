@@ -17,6 +17,6 @@ public class Main {
                 suspensos++;
             }
         }
-        System.out.println("Hay "suspensos);
+        System.out.println("Hay suspensos");
     }
 }

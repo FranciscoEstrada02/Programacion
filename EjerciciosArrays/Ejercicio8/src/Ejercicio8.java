@@ -14,7 +14,7 @@ public class Ejercicio8 {
     public void asignar(int dni) {
         int valor = dni % 23;
         Object[] keys = hashMap.keySet().toArray();
-        if(){
+        if(dni < 10000000  || dni > 999999999){
             System.out.println("VALOR NO VALIDO");
         }else if (hashMap.containsValue(valor)) {
             System.out.printf("%d%s", dni, keys[valor]);

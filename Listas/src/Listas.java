@@ -1,10 +1,10 @@
 import java.util.*;
 
 public class Listas {
-    protected List<Integer> lista1 = new ArrayList<>();
-    protected List<Integer> lista2 = new ArrayList<>();
-    protected List<Integer> lista3 = new ArrayList<>();
-    int[] arreglo4 = new int[20];
+    private List<Integer> lista1 = new ArrayList<>();
+    private List<Integer> lista2 = new ArrayList<>();
+    private List<Integer> lista3 = new ArrayList<>();
+    private int[] arreglo4 = new int[20];
 
     protected List<Integer> lista10 = new ArrayList<>();
 
@@ -56,6 +56,7 @@ public class Listas {
     public void setArreglo4(int[] arreglo4) {
         this.arreglo4 = arreglo4;
     }
+
     //Metodo 1
 
     public void ejercicioUno(int numero) {

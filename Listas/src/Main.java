@@ -7,6 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Random random = new Random();
         Listas lista = new Listas();
+
         //Ejercicio 1
         System.out.println("Ingrese un numero");
         int numero = sc.nextInt();
@@ -41,9 +42,10 @@ public class Main {
         List<Integer> lista4 = new ArrayList<>();
         for(int i = 0; i <= tamaño4; i++){
             lista4.add(random.nextInt(10));
+            System.out.println(lista.ejercicioCuatro(lista4,tamaño4)[i]);
 
         }
-        System.out.println(lista.ejercicioCuatro(lista4,tamaño4));
+
 
         //Ejercicio5
 
