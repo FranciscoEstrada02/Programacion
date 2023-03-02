@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cce47e9-d5d1-4031-a26e-44ea2a441c83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Recursividad/src/Recursividad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Listas/Listas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Listas/Listas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Listas/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Listas/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Listas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Listas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Matrices/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Matrices/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Matrices/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Matrices/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Matrices/matrices.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Matrices/src/Ejercicio1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosArrays/Ejercicio5/src/Ahorcado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerciciosArrays/Ejercicio5/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +35,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/festr/OneDrive/Documentos/1 DAW/Programacion"
+    "last_opened_file_path": "C:/Users/festr/OneDrive/Documentos/1 DAW/Programacion/EjerciciosArrays"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
